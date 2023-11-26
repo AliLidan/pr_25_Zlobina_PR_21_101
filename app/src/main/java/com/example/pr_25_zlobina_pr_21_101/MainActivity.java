@@ -18,7 +18,7 @@ import android.widget.Toast;
 
 import java.io.IOException;
 
-public class MainActivity extends AppCompatActivity {
+public class MainActivity extends AppCompatActivity implements View.OnClickListener{
     private SoundPool mSoundPool;
     private AssetManager mAssetManager;
     private int mCatSound, mChickenSound, mCucamberSound, mFrogSound, mDuckSound, mHorseSound;
@@ -30,26 +30,26 @@ protected void onCreate(Bundle savedInstanceState) {
         setContentView(R.layout.activity_main);
 
         ImageButton catImageButton = findViewById(R.id.cat);
-        catImageButton.setOnClickListener(onClickListener);
+       // catImageButton.setOnClickListener(onClickListener);
 
         ImageButton chickenImageButton = findViewById(R.id.chicken);
-        chickenImageButton.setOnClickListener(onClickListener);
+   //     chickenImageButton.setOnClickListener(onClickListener);
 
         ImageButton horseImageButton = findViewById(R.id.horse);
-        horseImageButton.setOnClickListener(onClickListener);
+      //  horseImageButton.setOnClickListener(onClickListener);
 
         ImageButton duckImageButton = findViewById(R.id.dusk);
-        duckImageButton.setOnClickListener(onClickListener);
+      //  duckImageButton.setOnClickListener(onClickListener);
 
         ImageButton frogImageButton = findViewById(R.id.frog);
-        frogImageButton.setOnClickListener(onClickListener);
+     //   frogImageButton.setOnClickListener(onClickListener);
 
         ImageButton cucamberImageButton = findViewById(R.id.cucamber);
-        cucamberImageButton.setOnClickListener(onClickListener);
+     //   cucamberImageButton.setOnClickListener(onClickListener);
 
         }
 
-        View.OnClickListener onClickListener = new View.OnClickListener() {
+      //  View.OnClickListener onClickListener = new View.OnClickListener() {
 @Override
 public void onClick(View v) {
         switch (v.getId()) {
@@ -73,7 +73,7 @@ public void onClick(View v) {
         break;
                 }
             }
-        };
+       // };
 
 @TargetApi(Build.VERSION_CODES.LOLLIPOP)                                                // создание обектоа, который воспроизводит звук
                                                                                         //  API-уровень Lollipop (версия Android 5.0)

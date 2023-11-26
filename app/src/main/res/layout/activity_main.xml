@@ -16,7 +16,8 @@
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@+id/cucamber"
             app:layout_constraintWidth_percent="0.5"
-            app:srcCompat="@drawable/cat" />
+            app:srcCompat="@drawable/cat"
+            android:onClick="onClick"/>
 
         <ImageButton
             android:id="@+id/dusk"
@@ -28,7 +29,8 @@
             app:layout_constraintHeight_percent="0.3"
             app:layout_constraintTop_toBottomOf="@+id/chicken"
             app:layout_constraintWidth_percent="0.5"
-            app:srcCompat="@drawable/dusk" />
+            app:srcCompat="@drawable/dusk"
+            android:onClick="onClick"/>
 
         <ImageButton
             android:id="@+id/horse"
@@ -40,7 +42,8 @@
             app:layout_constraintHeight_percent="0.3"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintWidth_percent="0.5"
-            app:srcCompat="@drawable/horse" />
+            app:srcCompat="@drawable/horse"
+            android:onClick="onClick"/>
 
         <ImageButton
             android:id="@+id/frog"
@@ -52,13 +55,15 @@
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintHeight_percent="0.3"
             app:layout_constraintWidth_percent="0.5"
-            app:srcCompat="@drawable/frog" />
+            app:srcCompat="@drawable/frog"
+            android:onClick="onClick"/>
 
         <ImageButton
             android:id="@+id/cucamber"
             android:layout_width="0dp"
             android:layout_height="0dp"
             android:layout_marginTop="8dp"
+            android:onClick="onClick"
             android:scaleType="centerInside"
             app:layout_constraintHeight_percent="0.3"
             app:layout_constraintStart_toStartOf="parent"
@@ -76,6 +81,7 @@
             app:layout_constraintHeight_percent="0.3"
             app:layout_constraintTop_toTopOf="parent"
             app:layout_constraintWidth_percent="0.5"
-            app:srcCompat="@drawable/chicken" />
+            app:srcCompat="@drawable/chicken"
+            android:onClick="onClick"/>
 
 </androidx.constraintlayout.widget.ConstraintLayout>
